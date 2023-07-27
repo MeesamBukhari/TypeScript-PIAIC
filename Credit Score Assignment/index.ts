@@ -32,7 +32,7 @@ function cScore (bal:number, minbal:number, maxbal:number) {
     }
 }
 
-console.log(cScore(a,b,c));
+console.log(cScore(bal,minbal,maxbal));
 
 
 // cScore(x, y, z) // to manually put values in function
