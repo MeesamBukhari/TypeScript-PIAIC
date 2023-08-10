@@ -124,15 +124,15 @@ if (playerLife == 0) {
 }
 
 let state = "normal";
-let counter=0;
+let counter = 0;
 
 while(state != "hit"){
-    console.log("runnig...");
-    console.log("runnig...");
+    console.log("running...");
+    console.log("running...");
     console.log(counter);
     ++counter;
 
-    if(counter ==3){
+    if(counter == 3){
         state = "hit";
     }
 }
