@@ -1,4 +1,4 @@
-// For Loop
+// => For Loop
 let groceryItems = ["Bread", "Egg", "Fruit", "Milk", "Coffee"];
 for (let i=0; i<groceryItems.length; i++) {
     console.log(`Item No. ${i} which is ${groceryItems[i]}`);
@@ -6,6 +6,8 @@ for (let i=0; i<groceryItems.length; i++) {
     console.log("Put in cart");
     console.log("========================");
 }
+
+
 
 let groceryItems1 = ["Bread", "Egg", "Fruit", "Milk", "Coffee"];
 for (let i=0; i<groceryItems1.length; i+=2) {
@@ -19,6 +21,8 @@ for (let i=0; i<groceryItems1.length; i+=2) {
     }
 }
 
+
+
 let groceryItems2 = ["Bread", "Egg", "Fruit", "Milk", "Coffee", "Tea", "Oil"];
 for (let i=0; i<=4; i++) {
     console.log(`Item No. ${i} which is ${groceryItems2[i]}`);
@@ -26,6 +30,8 @@ for (let i=0; i<=4; i++) {
     console.log("Put in cart");
     console.log("========================");
 }
+
+
 
 let groceryItems3 = ["Bread", "Egg", "fruit", "Milk", "Fruit", "Coffee", "Tea", "Oil"];
 for (let i=0; i<=groceryItems3.length; i++) {
@@ -38,6 +44,8 @@ for (let i=0; i<=groceryItems3.length; i++) {
         break;
     }
 }
+
+
 
 let fruitcounter = 0;
 let groceryItems4 = ["Bread", "Egg", "Fruit", "Milk", "Fruit", "Coffee", "Tea", "Fruit", "Oil", "Noodles", "Jam", "Fruit", "Cake"];
@@ -55,7 +63,27 @@ for (let i=0; i<=groceryItems4.length; i++) {
     }
 }
 
-// *
+
+
+// => Each product will be bought only once
+let groceryItems_1 = ["Bread", "cooking oil", "egg", "milk", "veg", "milk", "cooking oil", "egg", "fruits", "egg"]
+let buyItems1 = [];
+
+for(let item = 0; item < groceryItems4.length; item++){
+
+    let val = buyItems1.includes(groceryItems_1[item]);
+    if(val){
+        continue;
+    }
+    console.log(`item no, ${item} which is ${groceryItems_1[item]}`);
+    console.log(`pick from rack`);
+    console.log(`putt in you cart`);
+    console.log(`===========================`);
+    buyItems1.push(groceryItems_1[item]);
+}
+
+
+
 let fruitcounter1 = 0;
 let groceryItems5 = ["Bread", "Egg", "Fruit", "Milk", "Fruit", "Coffee", "Tea", "Fruit", "Oil", "Noodles", "Jam", "Fruit", "Cake"];
 for (let i=0; i<=groceryItems5.length; i++) {
@@ -72,9 +100,12 @@ for (let i=0; i<=groceryItems5.length; i++) {
     }
 }
 
-// 'egg' is skipped here
+
+
+// => To skip 'egg' from the list
 let groceryItemss = ["Bread","cooking oil", "egg","milk","veg", "fruits"];
 let eggCounter=0;
+
 for(let item = 0; item < groceryItemss.length; item++){
 
     if(groceryItemss[item] == "egg"){
@@ -91,12 +122,15 @@ for(let item = 0; item < groceryItemss.length; item++){
 }
 
 
+
 // Nested Loop
 for (let outer=1; outer<=5; outer++) {
     for (let inner=1; inner<=3; inner++) {
         console.log(`outer loop value is ${outer}...inner loop value is ${inner}`);
     }
 }
+
+
 
 let firstName = ["Mike", "John", "Smith", "Dan"];
 let lastName = ["David", "Jack", "Doe"];
@@ -108,6 +142,8 @@ for (let fName=0; fName<firstName.length; fName++) {
     }
 }
 console.log(fullName);
+
+
 
 // While Loop
 let playerLife = 3;
@@ -122,6 +158,8 @@ while (playerLife != 0) {
 if (playerLife == 0) {
     console.log("*********GAME OVER*********")
 }
+
+
 
 let state = "normal";
 let counter = 0;
@@ -139,7 +177,8 @@ while(state != "hit"){
 
 
 
-
+// =====================================================================
+// => Modules
 
 let e = "USA";
 let f = 18.9;
