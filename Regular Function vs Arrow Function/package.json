@@ -1,0 +1,19 @@
+{
+  "name": "regular-function-vs-arrow-function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.10",
+    "@types/prompt-sync": "^4.2.0"
+  }
+}
